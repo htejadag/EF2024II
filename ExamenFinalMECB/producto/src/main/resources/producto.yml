@@ -1,0 +1,20 @@
+version: "1.0"
+
+services:
+  mysql:
+    image: mysql:8.0.26
+    container_name: examen-final
+    restart: always
+    environment:
+    - MYSQL_ROOT_PASSWORD=Manuel2024
+    - MYSQL_DATABASE:producto
+  
+    ports:
+    - 3310:3306
+    - 33011:33060
+    networks:
+    - td2025 Examen-Final
+    
+networks:
+  td2025 Examen-Final:
+    name: Examen-final
