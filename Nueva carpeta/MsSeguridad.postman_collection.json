@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "1128e7ba-4e3d-406b-bcc9-96d9199d5424",
+		"name": "MsSeguridad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31189613"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:85/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "85",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:85/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "85",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
